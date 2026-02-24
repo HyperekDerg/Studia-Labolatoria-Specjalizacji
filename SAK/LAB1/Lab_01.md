@@ -77,6 +77,7 @@ Stworzono hierarchiczny model ruchu planetarnego oparty na współrzędnych bieg
 3. **Księżyc:** Wykorzystuje pozycję Ziemi jako punkt odniesienia, tworząc model hierarchiczny. Krąży w odległości **70 jednostek** od Ziemi:
 
 ![Podgląd księżyca](https://github.com/HyperekDerg/Studia-Labolatoria-Specjalizacji/blob/main/SAK/LAB1/Zrzut%20ekranu%202026-02-24%20203148.png?raw=true)
+
     - x=x_ziemia+70⋅cos(kąt księz˙yca)
     - y=y_ziemia+70⋅sin(kąt księz˙yca)
     - Kąt księżyca zmienia się szybciej (**4 stopnie** na krok), co odzwierciedla różnice w prędkościach orbitalnych.
