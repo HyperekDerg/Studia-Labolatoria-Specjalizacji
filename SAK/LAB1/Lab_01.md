@@ -1,7 +1,7 @@
 ## Zadanie A: Symulacja Rzutu Ukośnego
 
 
-![[Zrzut ekranu 2026-02-24 203033.png]]
+![Podgląd skryptów](https://github.com/HyperekDerg/Studia-Labolatoria-Specjalizacji/blob/main/SAK/LAB1/Zrzut%20ekranu%202026-02-24%20203033.png?raw=true)
 Zadanie implementuje prosty silnik fizyczny obsługujący ruch pocisku, grawitację oraz odbicia od krawędzi sceny. Logika została podzielona na trzy główne procedury: **Ustaw Domyślne**, **Wystrzel pocisk** oraz **Aktualizuj fizykę**.
 
 ### Kluczowe elementy działania
@@ -63,18 +63,20 @@ Stworzono hierarchiczny model ruchu planetarnego oparty na współrzędnych bieg
 ### Struktura obiektów:
 
 1. **Słońce:** Punkt statyczny umieszczony w centrum sceny (współrzędne 0,0).
-![[Zrzut ekranu 2026-02-24 203143.png]]
+   
+![Podgląd słońca](https://github.com/HyperekDerg/Studia-Labolatoria-Specjalizacji/blob/main/SAK/LAB1/Zrzut%20ekranu%202026-02-24%20203143.png?raw=true)
 
-2. **Ziemia:** Krąży wokół Słońca w odległości **120 jednostek**. Jej pozycja jest aktualizowana w pętli:
+3. **Ziemia:** Krąży wokół Słońca w odległości **120 jednostek**. Jej pozycja jest aktualizowana w pętli:
 
-![[Zrzut ekranu 2026-02-24 203139 1.png]]
+![Podgląd ziemii](https://github.com/HyperekDerg/Studia-Labolatoria-Specjalizacji/blob/main/SAK/LAB1/Zrzut%20ekranu%202026-02-24%20203139%201.png?raw=true)
+
     - x_ziemia=120⋅cos(kąt ziemi)
     - y_ziemia=120⋅sin(kąt ziemi)
     - Kąt zwiększa się o **1 stopień** w każdej iteracji.
         
 3. **Księżyc:** Wykorzystuje pozycję Ziemi jako punkt odniesienia, tworząc model hierarchiczny. Krąży w odległości **70 jednostek** od Ziemi:
 
-![[Zrzut ekranu 2026-02-24 203148.png]]
+![Podgląd księżyca](https://github.com/HyperekDerg/Studia-Labolatoria-Specjalizacji/blob/main/SAK/LAB1/Zrzut%20ekranu%202026-02-24%20203148.png?raw=true)
     - x=x_ziemia+70⋅cos(kąt księz˙yca)
     - y=y_ziemia+70⋅sin(kąt księz˙yca)
     - Kąt księżyca zmienia się szybciej (**4 stopnie** na krok), co odzwierciedla różnice w prędkościach orbitalnych.
