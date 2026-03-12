@@ -3,3 +3,6 @@
 
 ## Systemy Animacji komputerowej Labolatorium 2:
 - https://hyperekderg.github.io/Studia-Labolatoria-Specjalizacji/SAK/Lab2/js/
+  
+## Systemy Animacji komputerowej Labolatorium 3:
+- https://hyperekderg.github.io/Studia-Labolatoria-Specjalizacji/SAK/Lab3/
